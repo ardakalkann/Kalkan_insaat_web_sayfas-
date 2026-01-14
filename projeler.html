@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKAN İNŞAAT - Projeler</title>
+    <link rel="stylesheet" href="projeler.css">
+</head>
+<body>
+
+    <div class="menu">
+        <a href="index.html">ANA SAYFA</a>
+        <a href="projeler.html">PROJELER</a>
+        <a href="galeri.html">GALERİ</a>
+        <a href="hakkimizda.html">HAKKIMIZDA</a>
+        <a href="iletisim.html">İLETİŞİM</a>
+    </div>
+
+    <div class="sayfa-bolumu">
+        <div style="text-align: center;">
+            <h2>Tüm Projelerimiz</h2>
+            <p>Hayata geçirdiğimiz modern ve güvenli yapıları inceleyin.</p>
+        </div>
+        
+        <div class="filtre-butonlari">
+            <button class="aktif-btn" onclick="filtrele('hepsi', this)">Tümü</button>
+            <button onclick="filtrele('satista', this)">Satışta Olanlar</button>
+            <button onclick="filtrele('tamamlanan', this)">Tamamlananlar</button>
+            <button onclick="filtrele('ticari', this)">Ticari & Hafriyat</button>
+        </div>
+
+        <div class="proje-container">
+            <div class="proje-kart" data-kategori="tamamlanan">
+                <img src="copurlu.jpg" alt="Lüks Villa">
+                <div class="kart-detay">
+                    <h3>Çopurlu Lüks Villa</h3>
+                    <p><strong>Lokasyon:</strong> Toroslar/Mersin</p>
+                    <p><strong>Durum:</strong> Tamamlandı</p>
+                    <p>Havuzlu ve bahçeli villa projesi.</p>
+                </div>
+            </div>
+
+            <div class="proje-kart" data-kategori="satista">
+                <img src="doktorpeyzaj.jpg" alt="İkiz Villa">
+                <div class="kart-detay">
+                    <h3>Vadi İkiz Villalar</h3>
+                    <p><strong>Lokasyon:</strong> Toroslar/Mersin</p>
+                    <p><strong>Durum:</strong> Satışta</p>
+                    <p>Geniş bahçeli aile konutları.</p>
+                </div>
+            </div>
+
+            <div class="proje-kart" data-kategori="satista">
+                <img src="proje1.jpg" alt="Özel Yapım Villa">
+                <div class="kart-detay">
+                    <h3>Özel Yapım Villa</h3>
+                    <p><strong>Lokasyon:</strong> Mersin/Bekiralanı</p>
+                    <p><strong>Durum:</strong> Devam Ediyor</p>
+                    <p>Kişiye özel villa projesi</p>
+                </div>
+            </div>
+
+            <div class="proje-kart" data-kategori="satista">
+                <img src="proje4.2.jpg" alt="Tatil Evi">
+                <div class="kart-detay">
+                    <h3>Özel Yapım Tatil Evi</h3>
+                    <p><strong>Lokasyon:</strong> Mezitli/Mersin</p>
+                    <p><strong>Durum:</strong> Devam Ediyor</p>
+                    <p>Kişiye özel isteklere göre dizayn edilen tatil evi.</p>
+                </div>
+            </div>
+
+            <div class="proje-kart" data-kategori="satista">
+                <img src="pars vadi.jpg" alt="Toplu Konut"> 
+                <div class="kart-detay">
+                    <h3>Pars Vadi Toplu Villa</h3>
+                    <p><strong>Lokasyon:</strong> Yenişehir/Mersin</p>
+                    <p><strong>Durum:</strong> Proje Aşamasında</p>
+                    <p>Toplu alanda, bireysel yaşam.</p>
+                </div>
+            </div>
+
+            <div class="proje-kart" data-kategori="ticari">
+                <img src="kepçe4.jpg" alt="Hafriyat">
+                <div class="kart-detay">
+                    <h3>Site Temeli</h3>
+                    <p><strong>Lokasyon:</strong> Yenişehir/Mersin</p>
+                    <p><strong>Durum:</strong> Tamamlandı</p>
+                    <p>Toplu Konut temeli ve zemin iyileştirme.</p>
+                </div>
+            </div>
+
+            <div class="proje-kart" data-kategori="ticari">
+                <img src="parsvadi2.jpg" alt="Taş Duvar"> 
+                <div class="kart-detay">
+                    <h3>Taş Duvar</h3>
+                    <p><strong>Lokasyon:</strong> Soğucak/Mersin</p>
+                    <p><strong>Durum:</strong> Devam Ediyor</p>
+                    <p>Estetik ve sağlam istinat duvarı.</p>
+                </div>
+            </div>
+
+            <div class="proje-kart" data-kategori="ticari">
+                <img src="bim.jpg" alt="İş Merkezi ve Konut"> 
+                <div class="kart-detay">
+                    <h3>İş Merkezi ve Konut</h3>
+                    <p><strong>Lokasyon:</strong> Bekiralanı/Mersin</p>
+                    <p><strong>Durum:</strong> Tamamlandı</p>
+                    <p>Merkezi konumda iş merkezi ve konut projesi.</p>
+                </div>
+            </div>
+
+            <div class="proje-kart" data-kategori="tamamlanan">
+                <img src="şömine2.jpg" alt="şömine"> 
+                <div class="kart-detay">
+                    <h3>Modern Tasarım Mimari</h3>
+                    <p><strong>Lokasyon:</strong> Toroslar/Mersin</p>
+                    <p><strong>Durum:</strong> Tamamlandı</p>
+                    <p>Modern tasarım galeri boşluğu ve şömine.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="alt-bilgi">
+        <p>&copy; 2025 Kalkan İnşaat Hafriyat. Tüm Hakları Saklıdır.</p>
+    </div>
+
+    <script src="proje.js"></script>
+</body>
+</html>

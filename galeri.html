@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKAN İNŞAAT - Galeri</title>
+    <link rel="stylesheet" href="galeri.css">
+</head>
+<body>
+
+    <div class="menu">
+        <a href="index.html">ANA SAYFA</a>
+        <a href="projeler.html">PROJELER</a>
+        <a href="galeri.html">GALERİ</a>
+        <a href="hakkimizda.html">HAKKIMIZDA</a>
+        <a href="iletisim.html">İLETİŞİM</a>
+    </div>
+
+    <div class="sayfa-bolumu">
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h2>Fotoğraf Galerisi</h2>
+            <p>Projelerimizden ve şantiye sahalarımızdan güncel kareler. <br> <em>(Büyütmek için fotoğrafların üzerine tıklayınız)</em></p>
+            <hr style="width: 100px; border: 2px solid #c7b545;">
+        </div>
+        
+        <div class="galeri-konteyner">
+            <img src="copurlu.jpg" alt="Proje Foto 1" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="doktorpeyzaj.jpg" alt="Proje Foto 2" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="proje1.jpg" alt="Proje Foto 3" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="proje4.2.jpg" alt="Proje Foto 4" class="galeri-resim" onclick="resmiAc(this)">
+            
+            <img src="copurlu2.jpg" alt="Proje Foto 5" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="bim.jpg" alt="Proje Foto 6" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="DJI_0071.jpeg" alt="Proje Foto 7" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="DJI_0087.jpeg" alt="Proje Foto 8" class="galeri-resim" onclick="resmiAc(this)">
+            
+            <img src="DJI_0140.jpeg" alt="Proje Foto 9" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="DSCF9104.jpeg" alt="Proje Foto 10" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="DSCF9105.jpeg" alt="Proje Foto 11" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="DSCF9125.jpeg" alt="Proje Foto 12" class="galeri-resim" onclick="resmiAc(this)">
+            
+            <img src="DSCF9127.jpeg" alt="Proje Foto 13" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="kepçe3.jpg" alt="Proje Foto 14" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="kepçe4.jpg" alt="Proje Foto 15" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="pars vadi.jpg" alt="Proje Foto 16" class="galeri-resim" onclick="resmiAc(this)">
+            
+            <img src="parsvadi2.jpg" alt="Proje Foto 17" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="şömine2.jpg" alt="Proje Foto 18" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="beton dök.jpg" alt="Proje Foto 19" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="beton2.jpg" alt="Proje Foto 20" class="galeri-resim" onclick="resmiAc(this)">
+            <img src="projeçizim.jpg" alt="Proje Foto 21" class="galeri-resim" onclick="resmiAc(this)">
+        </div>
+    </div>
+
+    <div id="lightbox" onclick="resmiKapat()">
+        <span class="kapat">&times;</span>
+        <img class="lightbox-icerik" id="buyukResim">
+    </div>
+
+    <div class="alt-bilgi">
+        <p>&copy; 2025 Kalkan İnşaat Hafriyat. Tüm Hakları Saklıdır.</p>
+    </div>
+
+    <script src="proje.js"></script>
+</body>
+</html>

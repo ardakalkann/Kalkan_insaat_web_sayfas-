@@ -1,0 +1,126 @@
+
+body{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding: 0; background-color: #f4f4f4;}
+
+
+.menu{background-color: rgba(0, 0, 0, 0.9); overflow: hidden ; text-align: center; position: sticky; 
+    top: 0; z-index: 1000;}
+.menu a{display: inline-block; color: aliceblue; padding: 15px 25px; text-decoration:none ; font-weight: 600; font-size: 14px;
+     letter-spacing: 1px;}
+.menu a:hover {background-color: #c7b545; color: black;}
+
+
+.giris-arkaplan{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('kepçe3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    height: 85vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+@keyframes yukariCik {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.hero-icerik {
+    max-width: 900px;
+    animation: yukariCik 2.0s ease-out; 
+}
+
+.hero-baslik {
+    font-size: 4em;
+    margin: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.vurgu { color: #c7b545; } 
+
+.hero-slogan {
+    font-size: 1.5em;
+    margin-top: 20px;
+    font-weight: 300;
+    color: #ddd;
+    border-top: 2px solid #c7b545;
+    border-bottom: 2px solid #c7b545;
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.hero-aciklama {
+    font-size: 1.1em;
+    margin-top: 25px;
+    line-height: 1.6;
+    color: #ccc;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-kesfet {
+    background-color: #c7b545;
+    color: #000;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(199, 181, 69, 0.4);
+}
+.btn-kesfet:hover { 
+    background-color: #fff; 
+    color: #c7b545; 
+    transform: scale(1.5); 
+}
+
+
+
+
+
+
+.one-cikanlar { text-align: center; padding: 60px 20px; background-color: #fff; }
+.bolum-baslik { 
+    color: #333; 
+    margin-bottom: 10px; 
+    font-size: 2.5em; 
+    font-weight: 700; 
+    text-transform: uppercase;
+}
+.bolum-cizgi { width: 80px; height: 4px; background-color: #c7b545; margin: 0 auto 40px auto; }
+
+.proje-container { display: flex; justify-content: center;  gap: 30px; }
+
+.proje-kart {
+    background: white;
+    width: 350px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.proje-kart:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
+.proje-kart img { width: 100%; height: 250px; object-fit: cover; }
+.kart-detay { padding: 25px; text-align: left; }
+.kart-detay h3 { margin: 0 0 10px 0; color: #222; }
+.kart-detay p { color: #666; font-size: 0.9em; line-height: 1.5; }
+.kart-link { color: #c7b545; font-weight: bold; text-decoration: none; margin-top: 15px; display: inline-block; }
+
+
+
+
+.alt-bilgi { background-color: #1a1a1a; color: #666; text-align: center; padding: 30px; margin-top: 0; border-top: 5px solid #c7b545; }

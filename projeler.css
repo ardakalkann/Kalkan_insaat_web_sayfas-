@@ -1,0 +1,78 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    background-color: #f4f4f4; color: #333;
+    display: flex; flex-direction: column; min-height: 100vh;
+}
+h1, h2, h3 { color: #222; }
+a { text-decoration: none; }
+
+
+.menu {
+    background-color: rgba(0, 0, 0, 1); overflow: hidden; text-align: center;
+    position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+.menu a {
+    display: inline-block; color: aliceblue; padding: 15px 25px;
+    font-weight: 600; font-size: 14px; letter-spacing: 1px; 
+}
+.menu a:hover { background-color: #c7b545; color: black; }
+
+
+.sayfa-bolumu {
+    padding: 40px; background-color: white; max-width: 1200px; margin: 30px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05); border-radius: 8px; flex: 1;
+}
+
+
+
+.proje-container {
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; margin-top: 20px;
+}
+
+
+
+
+.proje-kart {
+    background: white; width: 350px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 10px;
+    overflow: hidden; transition: 0.3s; border: 1px solid #eee;
+}
+.proje-kart:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
+.proje-kart img { width: 100%; height: 250px; object-fit: cover; }
+
+
+
+.kart-detay { padding: 20px; text-align: left; }
+.kart-detay h3 { margin: 0 0 10px 0; color: #c7b545; }
+.kart-detay p { margin: 5px 0; color: #555; font-size: 0.95em; }
+
+
+
+
+.filtre-butonlari { text-align: center; margin-bottom: 30px; }
+.filtre-butonlari button { 
+    margin: 5px; padding: 10px 20px; border: none; cursor: pointer;
+    background-color: #eee; color: #333; border-radius: 20px; transition: 0.3s;
+}
+.filtre-butonlari button:hover { background-color: #c7b545; color: white; }
+
+
+
+.alt-bilgi {
+    background-color: #1a1a1a; color: #888; text-align: center;
+    padding: 30px; margin-top: auto; border-top: 5px solid #c7b545;
+}
+
+
+.aktif-btn {
+    background-color: #c7b545 !important;
+    color: white !important;
+}
+
+.proje-kart {
+    
+    transition: opacity 0.4s ease, transform 0.3s;
+}

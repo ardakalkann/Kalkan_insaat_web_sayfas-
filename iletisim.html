@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKAN İNŞAAT - İletişim</title>
+    <link rel="stylesheet" href="iletisim.css">
+</head>
+<body>
+
+    <div class="menu">
+        <a href="index.html">ANA SAYFA</a>
+        <a href="projeler.html">PROJELER</a>
+        <a href="galeri.html">GALERİ</a>
+        <a href="hakkimizda.html">HAKKIMIZDA</a>
+        <a href="iletisim.html">İLETİŞİM</a>
+    </div>
+
+    <div class="sayfa-bolumu">
+        <h2 style="text-align: center; text-transform: uppercase;">Bize Ulaşın</h2>
+        <p style="text-align: center; color: #666;">Projelerimiz hakkında detaylı bilgi almak için aşağıdaki formu doldurabilirsiniz.</p>
+        
+        <div class="iletisim-bilgi">
+            <p><strong>📍 Adres:</strong> Mersin / Türkiye</p>
+            <p><strong>📞 Telefon:</strong> 0532 725 11 19</p>
+            <p><strong>✉️ E-Posta:</strong> info@kalkaninsaat.com</p>
+        </div>
+
+        <h3>İletişim Formu</h3>
+        
+        <form id="mesajFormu">
+            <div class="form-satir">
+                <input type="text" id="ad" placeholder="Adınız" required>
+                <input type="text" id="soyad" placeholder="Soyadınız" required>
+            </div>
+            <input type="email" id="email" placeholder="E-posta adresiniz" required>
+            <textarea id="mesaj" rows="6" placeholder="Mesajınız..." required></textarea>
+            
+            <button type="button" onclick="mesajGonder(this)">GÖNDER</button>
+        </form>
+
+        <div id="basariKutusu">
+             Mesajınız gönderildi.
+        </div>
+
+    </div>
+
+    <div class="alt-bilgi">
+        <p>&copy; 2025 Kalkan İnşaat Hafriyat. Tüm Hakları Saklıdır.</p>
+    </div>
+
+    <script src="proje.js"></script>
+</body>
+</html>

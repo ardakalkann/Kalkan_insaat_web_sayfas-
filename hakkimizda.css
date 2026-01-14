@@ -1,0 +1,112 @@
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    background-color: #f8f9fa; color: #333;
+    display: flex; flex-direction: column; min-height: 100vh;
+}
+h1, h2, h3 { color: #222; }
+a { text-decoration: none; }
+
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.95); overflow: hidden; text-align: center;
+    position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+.menu a {
+    display: inline-block; color: aliceblue; padding: 16px 25px;
+    font-weight: 600; font-size: 14px; letter-spacing: 1px; transition: 0.3s;
+}
+.menu a:hover { background-color: #c7b545; color: black; }
+
+.sayfa-bolumu {
+    padding: 40px; background-color: white; max-width: 1200px; margin: 30px auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05); border-radius: 8px; flex: 1;
+}
+
+
+.hakkimizda-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+
+.hakkimizda-gorsel {
+    flex: 1;
+    position: relative;
+}
+.hakkimizda-gorsel img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px #c7b545; 
+    transition: transform 0.3s;
+}
+.hakkimizda-gorsel img:hover {
+    transform: scale(1.02);
+}
+
+
+.hakkimizda-metin {
+    flex: 1;
+}
+.baslik-buyuk {
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.vurgu-renk { color: #c7b545; }
+
+.aciklama-paragraf {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    border-left: 4px solid #c7b545;
+    padding-left: 15px;
+}
+
+
+.vizyon-misyon-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+}
+.vm-kart {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    text-align: center;
+}
+.vm-kart:hover {
+    transform: translateY(-5px);
+    border-bottom: 5px solid #c7b545;
+}
+.vm-ikon {
+    font-size: 3em;
+    color: #c7b545;
+    margin-bottom: 15px;
+    display: block;
+}
+.vm-kart h3 { font-size: 1.5em; margin-bottom: 15px; }
+.vm-kart p { color: #666; line-height: 1.6; }
+
+
+@media (max-width: 768px) {
+    .hakkimizda-container { flex-direction: column; }
+    .vizyon-misyon-wrapper { flex-direction: column; }
+    .baslik-buyuk { font-size: 2em; }
+}
+
+.alt-bilgi {
+    background-color: #1a1a1a; color: #888; text-align: center;
+    padding: 30px; margin-top: auto; border-top: 5px solid #c7b545;
+}
